@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 /* header image set to cover 100vh */
 .bg-dark{
@@ -23,12 +24,49 @@ header {
   background-size: cover;
 }
 
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #03045e;
+  opacity: 0.8;
+  min-height: 8vh;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+}
 
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a{
+  font-size: 20px;
+  text-decoration: none;
+  padding: 8px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border-right: 1px solid lightblue;
+}
+
+.logo {
+  display: none;
+  color: lightblue;
+  letter-spacing: 5px;
+  font-size: 30px;
+  padding-left: 20px;
+}
 /* setting the position and width of sections*/
 
 h1 {
-  font-size: 55px;
-  padding-top: 10%;
+  font-size: 45px;
+  padding-top: 30%;
   margin-bottom: 20px;
   }
 
@@ -70,7 +108,7 @@ hr {
   border: 1px solid #023e8a;
 }
 /* positioning the ordered & unordered lists */
-ul, ol {
+.list-style {
   position: relative;
   width:40%;
   left: 45%;
@@ -92,9 +130,11 @@ a {
 }
 /* adding pseudo classes to the links */
 a:link { color: #0096c7}
-a:visited { color: #03045e}
+a:visited{ color: #0096c7}
 a:hover { color: #48cae4}
 a:active { color: #023e8a}
+
+a:hover img{ opacity: 0.5;}
 
 .group img {
   width: 100%;
@@ -103,7 +143,7 @@ a:active { color: #023e8a}
 .group {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 10px 20px;
 }
 
 .item {
@@ -116,8 +156,53 @@ a:active { color: #023e8a}
   padding: 10px;
 }
 
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-family: sans-serif;
+  font-size: 16px;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+form textarea {
+  height: 150px;
+  width: 100%;
+}
+
+.button {
+  display: block;
+  background-color: #023e8a ;
+  color: #48cae4;
+  padding: 5px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  
+}
+
+.button:hover {
+  background-color: #48cae4;
+  color: #023e8a;
+}
 @media (min-width: 800px) {
+h1 {
+  font-size: 55px;
+  padding-top: 15%;
+}
 .group {
   flex-direction: row;
+}
+
+.logo {
+  display: unset;
+}
+
+form {
+  border-right: 2px solid #0096c7;
+  padding-top: 20px;
 }
 }

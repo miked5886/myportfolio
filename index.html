@@ -9,8 +9,19 @@
 <body>
     <!-- Header containing name & profesion-->
     <header>
-        <h1>Mike Duxbury</h1>
-        <P>Web Developer</P>
+        <nav>
+            <div class ="logo">
+                <h4>MD</h4>
+            </div>  
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+            <h1>Mike Duxbury</h1>
+            <P>Web Developer</P>
     </header>
     <hr>
     <main>
@@ -25,7 +36,7 @@
                 <h3>Hobbies & Interests</h3>
 
                 <!-- Unordered list of hobbies & interests-->
-                <ul>
+                <ul class="list-style">
                     <li>Web Development</li>
                     <li>Traveling</li>
                     <li>Football</li>
@@ -39,7 +50,7 @@
             </section>
             <hr>
             <!-- About me section -->
-            <section class = "bg-light">
+            <section  id = "about" class = "item bg-light">
                 <h2>About Me</h2>
                 <p>Since I left school I have worked in a number of different jobs in search of something I had a true passion for. Finally, I decided to give Web Development a go and I've never looked back! </p>
                 <P>Now I am a student at <i>Thinkful</i> and I finally feel I'm on the path to a career that I have a strong passion for. I am excited and motivated everyday to learn more.</P>
@@ -47,43 +58,58 @@
             </section>
             <hr>
             <!-- My projects section -->
-            <section class = "bg-dark">
+            <section id = "projects" class = "bg-dark">
                 <h2>My Projects</h2>
                 <p>Coming soon....</p>
                 <div class= "group">
                     <div class = "item">
                         <h3>To-DO List</h3>
-                        <img src="https://images.unsplash.com/photo-1547480053-7d174f67b557?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="to do list">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam vitae autem distinctio et ad illo incidunt exercitationem eaque doloremque.</p>
+                        <a href="#"><img src="https://images.unsplash.com/photo-1547480053-7d174f67b557?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="to do list"></a>
                     </div>
                     <div class = "item">
                         <h3>Calculator App</h3>
-                        <img src="https://images.unsplash.com/photo-1563212034-a3c52118cce2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="Calculator image">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ex unde eius perferendis incidunt, commodi eos architecto soluta omnis labore!</p>
+                        <a href="#"><img src="https://images.unsplash.com/photo-1563212034-a3c52118cce2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="Calculator image"></a>
                     </div>
                     <div class = "item">
                         <h3>Quiz App</h3>
-                        <img src="https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="Quiz paper">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam vitae autem distinctio et ad illo incidunt exercitationem eaque doloremque.</p>
+                        <a href="#"><img src="https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="Quiz paper"></a>
                     </div>
                     <div class = "item">
                         <h3>Interactive Map</h3>
-                        <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Map image">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nobis laboriosam odio? Alias, quae libero? Officia impedit dolorum temporibus dignissimos.</p>
+                        <a href="#"><img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Map image"></a>
                     </div>
                 </div>
             </section>
             <hr>
             <!-- Contact me section -->
             <section id="contact" class = "bg-light">
-                <div class = "group">
-                    <div class="item">
+             
                 <h2>Contact Me</h2>
-                <p>Please contact me on the following:</p>
-                <!-- Ordered list contaning links to my github & linkdin profiles -->
-                <ol>
-                    <li><a href="mailto:miked5886@gmail.com">Email</a></li>
-                    <li><a target="_blank" href="https://github.com/miked5886">GitHub</a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/michael-duxbury-65579511b/">LinkedIn</a></li>
-                </ol>
-                </div>
+                <div class="group">
+                
+                    <form class="item" action="https://formspree.io/mbjzqyvp" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Type your message here ..."></textarea>
+                        <button class="button"type="submit">Submit</button>
+                    </form>
+
                 <div class="item">
+                        <p>Please contact me on the following:</p>
+                        <!-- Ordered list contaning links to my github & linkdin profiles -->
+                        <ol class = "list-style">
+                            <li><a href="mailto:miked5886@gmail.com">Email</a></li>
+                            <li><a target="_blank" href="https://github.com/miked5886">GitHub</a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/in/michael-duxbury-65579511b/">LinkedIn</a></li>
+                        </ol>
+
                 <!-- Contact me image -->
                 <img class = "img-round" src="https://www.google.com/maps/vt/data=EnZPEkwNiNnOiqhCr2NPm9GtJUHj5AiO8RXpT-xx3Z64fI-lMPmCLFsnyX7G2zJeIPnk3fC9quk7s-YiaBHd34BesuOgDDX1ycJ9jg4Dlp9pOsC3uzNZY1th7SeOsHqvmTu8ZRZf5rDBhGwMERr84h9c8xessENIS6YKIOz1TtsNYjTszBsLCxbluAFpL2y_46DQzdU34IcEiEEWnDHJIMbCQ5BWnEXVH-lPoEgiazYsSb9S20wgpl8C" alt="Staten Island map">
                 </div>
