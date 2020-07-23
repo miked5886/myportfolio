@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* header image set to cover 100vh */
+/* background color classes */
 .bg-dark{
 background-color:#48cae4;
 }
@@ -16,6 +16,7 @@ background-color:#48cae4;
   border-radius: 50%;
   border: 1px solid #48cae4;
 }
+/* header image set to cover 100vh */
 header {
   height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1569196791447-9cad0185fcd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1007&q=80");
@@ -23,7 +24,7 @@ header {
   background-position: center;
   background-size: cover;
 }
-
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-around;
@@ -145,7 +146,7 @@ a:hover img{ opacity: 0.5;}
   flex-direction: column;
   padding: 10px 10px 20px;
 }
-
+/* Flex classes */
 .item {
   flex: 1;
   padding: 10px;
@@ -155,7 +156,7 @@ a:hover img{ opacity: 0.5;}
   flex: 2;
   padding: 10px;
 }
-
+/* Form Styling */
 form label {
   display: block;
   margin-bottom: 10px;
@@ -188,6 +189,8 @@ form textarea {
   background-color: #48cae4;
   color: #023e8a;
 }
+
+/* All Media Quiries */
 @media (min-width: 800px) {
 h1 {
   font-size: 55px;
