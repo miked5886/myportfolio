@@ -73,7 +73,7 @@ h1 {
 
 h2 {
     font-size: 30px;
-    padding-top: 20px;
+    padding: 10px 0;
   }
 
 h3 {
@@ -86,7 +86,7 @@ p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color:#023e8a;
   text-align: center;
-  padding: 10px 50px;
+  padding: 10px 30px;
   }
 
 h1, h2, h3  {
@@ -137,6 +137,15 @@ a:active { color: #023e8a}
 
 a:hover img{ opacity: 0.5;}
 
+section#projects a{
+  color: #023e8a;
+  padding: 5px;
+}
+
+section#projects a:hover{
+  color: #03045e;
+}
+
 .group img {
   width: 100%;
 }
@@ -144,7 +153,7 @@ a:hover img{ opacity: 0.5;}
 .group {
   display: flex;
   flex-direction: column;
-  padding: 10px 10px 20px;
+  padding: 10px 5px 20px;
 }
 /* Flex classes */
 .item {
@@ -208,4 +217,25 @@ form {
   border-right: 2px solid #0096c7;
   padding-top: 20px;
 }
+}
+
+@media (max-width: 400px) {
+  nav ul{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul li a{
+    font-size: 14px;
+    padding: 5px;
+    max-height: 6vh;
+    border-bottom: 1px solid lightblue;
+    border-right: none;
+  }
+  h1 {
+    padding-top: 40%;
+  }
+  h2 {
+    font-size: 24px;
+  }
 }
